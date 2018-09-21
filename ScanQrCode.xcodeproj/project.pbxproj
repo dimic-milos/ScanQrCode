@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		74DA77EA2154E492005FA2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA77E92154E492005FA2F7 /* AppDelegate.swift */; };
-		74DA77EC2154E492005FA2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA77EB2154E492005FA2F7 /* ViewController.swift */; };
 		74DA77EF2154E492005FA2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA77ED2154E492005FA2F7 /* Main.storyboard */; };
 		74DA77F12154E495005FA2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DA77F02154E495005FA2F7 /* Assets.xcassets */; };
-		74DA77F42154E495005FA2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA77F22154E495005FA2F7 /* LaunchScreen.storyboard */; };
 		74DA77FF2154E495005FA2F7 /* ScanQrCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA77FE2154E495005FA2F7 /* ScanQrCodeTests.swift */; };
+		74DA780B2154E651005FA2F7 /* ScanQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA78092154E651005FA2F7 /* ScanQrViewController.swift */; };
+		74DA780C2154E651005FA2F7 /* ScanQrViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DA780A2154E651005FA2F7 /* ScanQrViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		74DA77E62154E492005FA2F7 /* ScanQrCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanQrCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA77E92154E492005FA2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74DA77EB2154E492005FA2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74DA77EE2154E492005FA2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74DA77F02154E495005FA2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74DA77F32154E495005FA2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74DA77F52154E495005FA2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DA77FA2154E495005FA2F7 /* ScanQrCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanQrCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA77FE2154E495005FA2F7 /* ScanQrCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrCodeTests.swift; sourceTree = "<group>"; };
 		74DA78002154E495005FA2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DA78092154E651005FA2F7 /* ScanQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQrViewController.swift; sourceTree = "<group>"; };
+		74DA780A2154E651005FA2F7 /* ScanQrViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanQrViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				74DA77E92154E492005FA2F7 /* AppDelegate.swift */,
-				74DA77EB2154E492005FA2F7 /* ViewController.swift */,
+				74DA780D2154E65C005FA2F7 /* ScanQrViewController */,
 				74DA77ED2154E492005FA2F7 /* Main.storyboard */,
 				74DA77F02154E495005FA2F7 /* Assets.xcassets */,
-				74DA77F22154E495005FA2F7 /* LaunchScreen.storyboard */,
 				74DA77F52154E495005FA2F7 /* Info.plist */,
 			);
 			path = ScanQrCode;
@@ -94,6 +93,15 @@
 				74DA78002154E495005FA2F7 /* Info.plist */,
 			);
 			path = ScanQrCodeTests;
+			sourceTree = "<group>";
+		};
+		74DA780D2154E65C005FA2F7 /* ScanQrViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74DA78092154E651005FA2F7 /* ScanQrViewController.swift */,
+				74DA780A2154E651005FA2F7 /* ScanQrViewController.xib */,
+			);
+			path = ScanQrViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DA77F42154E495005FA2F7 /* LaunchScreen.storyboard in Resources */,
 				74DA77F12154E495005FA2F7 /* Assets.xcassets in Resources */,
+				74DA780C2154E651005FA2F7 /* ScanQrViewController.xib in Resources */,
 				74DA77EF2154E492005FA2F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DA77EC2154E492005FA2F7 /* ViewController.swift in Sources */,
+				74DA780B2154E651005FA2F7 /* ScanQrViewController.swift in Sources */,
 				74DA77EA2154E492005FA2F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +235,6 @@
 				74DA77EE2154E492005FA2F7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		74DA77F22154E495005FA2F7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74DA77F32154E495005FA2F7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
